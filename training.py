@@ -38,9 +38,6 @@ for i in range(len(imgs_names)):
             signs.pop()
         j+=1
 
-labels_df = pd.DataFrame(labels)
-labels_df.to_csv('labels.csv', index=False, header=False)
-
 
 clf = svm.SVC()
 hog_features = np.array(fd)
